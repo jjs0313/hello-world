@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오늘의 지구촌</title>
+    <link
+      rel="stylesheet"
+      href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    
+    <style>
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.1s;
+    }
+    body {
+            /* 다른 스타일 유지 */
+            background-image: url('https://wallpapercave.com/wp/wp8369434.jpg');
+            background-size: cover; /* 이미지가 창에 맞게 조절되도록 설정 */
+            background-position: center; /* 이미지를 가운데 정렬 */
+            background-attachment: fixed; /* 스크롤에 따라 배경 이미지가 고정되도록 설정 */
+        }
+
+        /* 다른 스타일 유지 */
+
+
+    </style>
+  
+    </head>
+
+  <body>
+    <div class="hero bg-dark text-center py-5"> 
+    <h1 class="text-white">오늘의 지구촌</h1>
+      <h2 class="text-white">조심조심~</h2>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- 기후 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_the_World_Meteorological_Organization.svg/450px-Flag_of_the_World_Meteorological_Organization.svg.png"
+              class="card-img-top"
+              alt="--"
+              
+            />
+            <div class="card-body">
+              <h5 class="card-title">세계기상기구</h5>
+              <h6 class="card-subtitle mb-2 text-muted">WWIS</h6>
+              <p class="card-text">
+                이 시각 전 세계의 날씨는?
+              </p>
+              <a
+                href="https://worldweather.wmo.int/kr/home.html"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                기후를 알아보자
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 실시간 세계 인구 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top"
+              alt="전기밥솥 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">세계 실시간 인구</h5>
+              <h6 class="card-subtitle mb-2 text-muted">팔랑팔랑</h6>
+              <p class="card-text">
+                당신이 알지 못했던 세계의 비밀
+              </p>
+              <a
+                href="https://www.worldometers.info/world-population/"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                인구수를 알아보자
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 지진 통계 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADqAYgDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAYHAQQFAwII/8QASBAAAQQCAAQDBAQIDAQHAAAAAQACAwQFEQYSITETQVEUImFxMoGR0QcVI1KSobGyFzU2QlRicnWTs9PwNHTB4SRTZIKi0vH/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQMCBAUG/8QAKhEBAAEEAQMEAQMFAAAAAAAAAAECAwQREgUhMRMUIkFRcYHhM2GhsfH/2gAMAwEAAhEDEQA/ALbREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQETaxv7kRtlE38k38kNwIm/ksbQ3DKLHN37aTaG4ZRY5ggO/qQ3EsosbTm8vNNG4hlFjm7HuCPJYc9rGuc4ta1o2XOIDR8yeiG30i1RkcYToXaZPbQsQ73+ktgPa4BzS1zT1BaQQfkR0QiYnxL6RNrG/hv5dUSyi1n38fG7lfbqscO4fPED9hcvWOaKVvPFJHI3tzRua9u/m0kIjlHjb0RY327ISiWUXjLbqQECexBESAdSyxsOvXTiFiO3TmOobFeV3pFLG8/Y0kox5R4290WAdrKMhERAREQEREBERAREQEREDonREQOidERA6J0REDonREQOidERA6J0RED71ROQc/8YZT33/8dd/nO/8APf8AFXr96rbJ8ET+PamjzFH2ieeedteyBCfyj3PDWu5ifP8ANUuV1G1cuUx6f0hHPL+e/wDSd96c8v57/wBJ33rYu0L+OnNa9A+CYDYDurXt/OiePdLfitbW+21LzlXOmdVdmeeX89/6TvvQOl/Pf+k7718ktGySAB3JOgPmVKsDwdeyfJbyBkp47o4Bw5bNhnmQHfRb8T1+Hmiy1buXauNDjYvHZXL2o4MeyV5ZJG6eVz3NhhaHAkveem/Qd/2i8PL7dKAZHinF4iGPD8MQwEiVkJnjbzwsc5wa7w/N7z+dv7fKf+v1qHocKii3FVEVbn7UE58vO8GST6b/AOe7875q1OAiTw/CXEk+2XOriSfp/FVS76b/AO2794q1uAv5PQ/85d/fSXP6bVM3527mZOsPnCN7GNvaI6EfkXKjeaQ6/KSfpu+9Xlmv4nzn923v8l6owdvsSFnVqpiqnUrVq5ePDcGYe9IPEk9hrRV43E/lZ3tPK1x326En4BVvkcplMpK6a/akl2S4MLi2GMejIx7oA/38e7npXjhrgKEE8jqckpHkXtZE1v7T9q42DhrT5nCw2w015LsfiB/0XEAuY13wJ0EhRlXqrldNmJ7ahpOr2BE2d1WZtd2g2Z8MgiO+2nka/Wt7FZrKYedstSV5jDgZqziXRTN31YWnpv0I0rpnrwWYJ687A6GWN8UjD2LXDWlSJxOaaXNGMyJAc5u/ZZtEAkb6BTtGRiV4tUTbna6a2QqWcfBk2vDastUWi938yPk53F3y81VWe4oyeZmlZFLLXxwcWw143FhkZvo+ct6kn03ofrPZkmuUPwfxV54poZp7ctIMma6OQRusyS6Id10Wgj61B2xvldHEw6fNLHCw99OkcGA/rUL87Krqim3T23EbfUVaxMJHw1rEzIzqR8UMkjWnW9Oc0EbXpUu3aMonpWJa8jT3icWg9ez29j8dhXhQpVsdTq06zAyGvEyNob8B1cfie5VccaYey3MNnoULMkdqsyWY1oHvYJw5zXE8g1sjSKr2DXZo9SmqZlMOFuIG52k/xWtZequZHaYwaa7mBLJWDr0do+fcFR3i/im3FamxOMmMIh025ZjOpDIRzGKN3cADXMR1302NddTgetlqmbf41G7DBNSmjkfNBJHGHtfG9vvOAG/pfaonekfNcyEz988tyzI7ffbpXO0ftUrb2Xc9tT9TPZ4hk08oY1s1ieTqGtD5ZXde+htyFksMha5ssMzC0lrmujkbvqCR0I+Csj8HkVUY7IztDfan3XRzO0A9sbWM8Nu++iOv1/BfHH2NmssxNqrVmnnEk0MprxOkf4Rbzt5+Qb0CND5qIUeyqmx68Vd3nwXxLcs2PxTkZnTPdG99KaQ7kPh+8+J7u56dW/I9/KfKncBQzUGcwcxx1+NjLjfEkfXlaxkbmOa4ucRrWiriSXV6fcrqtfNlOiIodI6J0REDonREQOidERA6J0REDoiIgIiICIiAiIgIiICIiAiIgx6H4qBjg7FRvyWU4jvajktWJwxk7oYYmPlc5gfKffLiNdBr06qed/tVZuxnEnF+TtPtTPr4mpcsQwyFhazkjkczVSI/ScddXH9fYS0sqInjHHlP1H1+7Ykk/BvNC7HHMWm1j/w7bJsuZWm8pK81mMub/WHNynzC0JOBMk+Rgo5PE2YJWeLC90skb3xE/SDY2vaR8Q77F17d/gnhhoo1MfBettHLN0ikcHAdfHsSA+98APsXNZxLw1aYaeQwIrVXSmVklGY7rSHoZImsDC0+vKRv0O0c65FiZ4Xtcv7b/l06XDfD/DMbMnnrkNmyz3oGOZqJjxo6ggJLnP8Aie3fQ7rkX85xDxbZfjMTA+Ol05ow7lBjB0H3Jm9APPlHy04ja95MFwL48ctvO3mwTMbJX9qlAbYjPYx2Sw78+Yb2PMDz2rfFfD+DqDH8NV4XPJ5fGLXiFryNc5Lvyj3+n+wjKYiKeMzFNH4jvMtqtjOG+DIIrmRlbaysgDIdNBfzOIaRVhPZo83Hr8evKpt5H6/tVa4rhXJ5ac5jiOeeKFxbOWTODbM4aeZplJ6Mj9G9/krK+7r9iN7F3wnVPGn6/lQDvpv/ALbv3irW4C/k9D/zl399VS76b/7bv3irW4C/k9D/AM5c/fUy5HTP68/o7mZ/ifOf3be/yXqjB5fUryzP8T5z+7b3+S9UaPL6khZ1aflQnuRxc1/gnhyzAxz5sdUhnLGAlz4HMDZOUDzGmu+QPqoHs7Y5p0Ryua5p6gjqHNI6/EK5+GP5O8P/AN3wfuqO8Q8ECw+W7h+RkziZJabjyxSOPcxO8ifTt8khnl4dVdNN235iHlgeO2NbFUzfMC0BjbrGlwIHQeOwe99YB+Pqp5FNDPHHLDIyWKQczHxuDmOb6hwOlQ80NitLLXsxSQzxnT45Wlr2n11+xdPB5+/g7DXxF0lN7gbNUuPK9u+r499A/wA9+fY99gxxuoVUT6d6E0/CI7WMxbN/Svlx/wDbC8f9VX+LaH5TDNPUHI0+nylaVOOO54LuIwFyu8PgnsGSJ3q18BcP2dVCcQQMvhT5DI1P1yAIozZicqJ/Ref/AHTXz/WuBxjYsVcBfmrzywStlrBskMjo3gOmaCA5p2qtGbz52Rl8iev9Lm/+yh18nOpx6uMwvHr/APqprijGTYzMXWOYRXtyy26r9e69kri9zR8WkkH6vVdbg3JZa1noYrV+7PF7Jbd4c88kjOYcujyuOlP8ricfmKrqtyMubvmje3pJE/ycx3qn2puUxn2OVPaY8Khw+ayGEtGxULXMeA2zBJvw5mDsDrqCPI+XxBINpYbibE5prWRPMFzQL6s5Ak7dTGezh8R9gVc5vhfL4UySFhs0QdtsxNJLB6TsHUfPt8lwQ4hzHscQ5pDmOYSHNI6hzXDz9CCpc21kXsKeFUdn6A6dk9VCuDuJ5sg44vIP5rjI/ErTnvYjb3a/+s3p18+vp1mqxeis3ab1EV0sogRFwiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIMH4d+3yVZ8ScZXJpLeOxofVrxSS155ugsSljixzWa+i0nfxPqFZvn9YVD5H+MMoP/XXP896mHJ6nertURFE635auyfgnYrGyiy0807WEzTce51W7BHbxFh+7FaaMTCJ56eNEx3n+cB318FKmZThvDhlxnC5BcC+vex0cFipKD28Ow7Tmn1aWgjtr1rzouli81l8Q8uo2SxjzuSGQeJA8+pjJ7/EaUab+Pl8I1V+063p3rN3i7jGeKvWqS18a2aNz2nxGVmhjg/msTOALndPogfV5q0Oh+vf1qrpOP8AiCVjI44qED3vja6ZkcjyAXAEta93KrRHnr1JUO3h103IqmKpmftQDgRI8HvzvB/SKtXgEg8PxgHq27cDvgecFV9xBjpMXl8hWcwiN0r56ztHToJDzNLSfT6J+IXT4V4mZgvaa1qKWSnPIJgYdGSGXWiQ0nRB81PlyMSuMfImLnZZObc1uGzhcdAY27vfxicFR3ZTniXjOpkaMuOxsVgMsgNszTtEf5MHZYxuyevYn0+fSFwQT3LFepWbzWbcrYIRrfvOPVx+DRsn5Iy6hcpv3KabffSfQ8Ujh/D8K1nUX2DPh69jmE4j0DtutFjvT9a6GF40ZmMlBjxjXweLHPJ4hsCQN8JodrlEY7/NcbjnF+x1uHZYQTBUr/i1xHZvIGmPfz95RPFZCTF5ClfjaHuryEujJ0JI3t5HN36kdlC+5l3bF6LdU9uy285gaGbrPjlYxtprHGtYA1JE8DYBI6lp8x93Sl3NfG90b+j43uY4ejmktIVmWPwgYZtaR9WC2+2WHw4po2sjDiO7383YeelWZdzGR8h6kue9x83E8xKKepV2a5ibflJJHSTcEUS7qKeemgYT5RyRyP19rtLhUZBFfxkhIAjvU3OJ7ACZuyp/UwNh/Ar6joyLlhr8oyNwPMJPE8ZjNd98oDfrVca2D5Hy9QfX5hSpyqJtVUVVfiF+WK9W3E6GzDFNC8tcY5mNewlp5gS13Tp5KtuPaVClPhmU6sFdr4LTniCNkYcQ9mi7lA7LsYzjzE+yV25IWIrccbGSmOJ0kcjmjXOwtO+vxCjPFmeo52xRfTjnbHVimYXTta0yGQtILWgkjWvNHRzb1q5Y3ExvscEO5M+1/fkoXna7b0GHS7o/CPGdH8TyD522/wCkuHwOA7iCJpGw6hdafiDyBcG3VlpW7lOUESVp5IXDtvlPQj4EaI+aNGjIuWMembf5lc+GybM1jK1/wPBbYEoMTniTl5HujIc7QHl6KAca4CpjZK9+ixsUFuV0U0LOjI5w0vDmAdACAdj1+a++FuLKeIqHH5COcwslklrywND+USHmcx7Oh77K1eK+JYM4alenHKypXe6YunAbJLK5vKCGgnQA3r5o28jItXsbdU/JxcJLJDmcFIwkOGRqM7692WQROH1gkfWryCpfhilJez2JjYCW1523p3a2GRwHnbv5u5R9augeaiVnSYmLdUz4ZREUOyIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiDH37VZ2uA+IZ7V2dljGhk1mxMwOln5g2SRzwDqLW+vVWauRc4gwNCwatq7HHM10LZByvLInTfQE0jRytLvLZUtXIsW7sR6iB/wfcSf0nF/4tj/AEU/g+4k/pOL/wAWx/oqeWeIeH6lr2Ke9Gyw18ccjQ2RzInyfQbLI0cjSfIErw/HEEN7PS2snSGNxra0L4hDK2WtYcOY+LKeji7Y5Q0f922lOBix/wBQr+D3iP8ApGM/xbH+kn8H3Ef9Ixn+LY/0lO28R8POqWbvtrW160scFgyRysfFLIdNa+N7Q8E+XRZj4hwEkORnF6NsOPcxtx0rJIvCLx7oLXtDuvkNJs9jiz9/5QMfg+4i5oybGM017HHUs5Og4E6/JK0guTFxFgJqt2426xsFJzG2zMySJ8Ln9GtdG9ofs+Q11Wxj8rjMo2Z1KfxDA4RzMfHJHJE5w2A+OQBw+xJ7tvHtWbO4tz5eGZwWNzcAittc2SPZr2ItCaEnvykggj1BGvs6QWz+D3Nxud7JcpTx7PL43iwP16ENa9v6x8lI4OJ22cxlm+11q+FxFfnnkmglEk7z7hPiO01vK4gAa2fIdenTj4l4dfWtWxda2Cq+GKyZY5o3xPl+gHxvaHjfcdEVXLWPf71ILDwBxI9zRNYx0DCepEk0zgP7IYz94KZ4HhbF4Lmma59i89nJJamABDe5ZExvRrf97K6MWWxE1CTKMtxfi+Pxea088kQETzG4gu8tggevl3Xnj81iMo+aOnYL5ImRyvY+KWJ4ik+hIGytB5T5FNps4ti1VE0+Z8Nq7TqZCtPUtxCWCZnK9h38w4EddjuCq/u/g8vte4469BJESeVl3njlaPIGSMOB/RCmkvEGAhuihJejFrxY65bySFjJpPoxPlA5A4+hK5UPE8DcxnKt+zDFTr3auOoNEMhe6dzAX+JI3be50AdJCciixd1FxE2cAcTuOnPxjB024zzH9TYl38RwDUqTRWcpYFySNwfHXjZyVg4HYLw4lzteW9D4KQScRcPxXDRfdYJ2zx1pOVkjomWJPowvma3ww8+hKxNxLw7XnlrS32Nmisspyt8OYtZYf2Y5wby/rUq7eJjW53/uXYHQBQ/N8D0cjNLaoz+xWZXOfKzk568rz1LuQEEH10fmCuxZ4k4cpz2a1i/GyasWNnAjle1kj/ox87WlvP8ADe/sXjLmq9a9mpLWTptx2OjpwzRCCYT17U/UeLL1aQ4dgB0UNm7Fq5Txr7oPJwFxOwnw346UeRE8rSfqdH/1WY+AeJ3n8pLjYge+5ppD9jYx+8p8ziLh+SLIztvRiLG+H7a6RkrDEJPobD2h3veXTqvajmMVkpZYadjxJYY45ZmGOWN8bZOjecSNBB+ClpR0/G2j/DvB0mFvNvz32zyNhlhEUMJZGPE5dnmc4uPb0C3OIOFKOccLLJHVrzWiPxmN52StHYSx7G9eRBB/Yt93EXDzKftz70bantT6QlLJOthpO2BvLvpo+S9LObwtV96OxcjjdRjgkt8wefCE51G08oPvO8gNn4dUbcWbEUenGtSr2TgHiZjtMlxsrfzvFmYfraYz+1e1f8Huckc32q5Rgj373giWd+vgHBjd/Wps3iPh59SS4bzGV4rDKsrpWSxujmeOYMkY9ocOnXqFov4iZPl8RFSsQHEyYy9k71h8bhuGJ5iY5rna03Yd111UNT2WLE8nQwmBxmChfFUa98spDrFiYh00zh0BcQAAB5AABdZRiHiP8ZZzEUsVNHJj5Kdq5de6GRshDfcj5fE0QNlpB112pOodG1NGuNHiGUREXCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgx96r4e0TZ8vx9K/FLbzAZmqN6s6WjJVgIb7d4sjAwEge4AT1/+VhLCKbtr1Nd/CvsM4kzY63hLFu3ez9q9kzbryMr1IWOBbMZHs5XHQ9wA9Tv166EkF6WnBdsQ5GCC/wAW3MldkiqyusQwwjkrv8IsJ9CPd+1WgnzRR7X48dq4OPmsDEA08uPx1xJDduuyOpJTUptPLJMIo2tZzb2GkeX2eUsNpzZMhaq3G1bnGbrl3/ws7pBSptDYXOiDectJHorM0mkR7WPqVeZfxbtajdOHt42tb4gZPdmggfLdkrQMcIrU0TYy4EknQLT2/rdZBwxVLI8pk5IskyXI2RI52UdGbEsUDfDZKY442cvMOzSFI9IiymxEV85lWTq9x+Khu3KloQ5DjF2RyIFad0zKcZIbzwtbz8vQkdPMeq9Jql7JTOmkp22xcQ8UVZQyWGUFmMx7ByunGvdD+ugdd1ZOk6or9pHjaO8VTWqmJiipQnlnu1aszoqvtBrVnEl0jIQ0jY0APd8/VafC1WwMnxTembkSDLVpVJMmxzbEkMTOfmJc0dNnpodFL1jSLps7rivfhXuAfuODHXMJYtWZszeyeVkuV5mQ0eRxdHNzPjIc8gANAP8A316dS9Zi4cbPUtNdleJ72evB0ErXMjg2+Ns229NkDl2VZSIq9t21tWlcZPLW+HnWWZEOmz1i7kIH05IMfVFQmRjRpgBeQOriT1OlmpVv2YsAJqdprsxxbZzN0PglHh14C6SNs3M3oDrQ3rurKXxJGyVksbxtkjHRvGyNteNHqFKIxI+5VlE2zM/CYy3Utx2chxdayl42oXRteyAk6jc7q4cvmAvYVL16KPmqW2uzvGbrVgSV5h4dGo7bDLzN6N6dN91LsfwzisdYr2Y33ZpKsUkFIW7DpmVYpPpNhaQAN9vNdwf7+HyRjRizr5yrWares+23ZKF98F3jOCWyxlaZ0v4vpt0w+FrmLSS7yXf4Rcbc/FWWc0t9uzEkUYcAHCOqPDAOv1/JdjJ4ark305pJrkFimZTXmpTuhkZ4reV43ojr8l747HUsXUgpU4+SCHm5QSXOJJ2XOcepJ80ZW8eabm99lb/i3I2sbmHTUrTYMPPckqRmGZslq3butlkljZy7IawBo6eZ9Fvz1rcUfD+TyVayGZDiCTNZYMglmkgYxhbVheyNpfpo15dD8lYqIRhxHeJVsyhkLsuLFmlZY3O8Uz5mzHLDJ+RpVow2Jk/TQ5veIB9V9Z6vcsT8dWI6tkRNr4fDQFleX3qxeJJ3QgN6gdQdDSsdNITiRqY2iXD8T7PEGdyHs1mGrXo47G0faYJIC+JrNuc1sjQde61S5YWVDZtW4txoRERaIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHVOqIgdU6oiB1REQE6oiB1REQEREDqiIgIiICIiAnVEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETabQETaICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD//Z"
+              class="card-img-top"
+              alt="사이트 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">지진 통계</h5>
+              <h6 class="card-subtitle mb-2 text-muted">~~</h6>
+              <p class="card-text">
+                 지구는 지금도 떨고있다.
+              </p>
+              <a
+                href="https://earthquake.usgs.gov/earthquakes/map/?extent=-79.0363,-207.42188&extent=73.82795,203.20313"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                지각을 알아보자
+              </a>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+    </div>
+  </body>
+</html>
